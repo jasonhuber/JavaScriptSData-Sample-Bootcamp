@@ -69,6 +69,11 @@
 	{
 		   var request = new Sage.SData.Client.SDataResourceCollectionRequest(service)
             .setResourceKind('Accounts');
+			/*request.setQueryArgs({
+            'where': "Address.City like '%Chicago%'",
+			'include': "Owner"
+			}); */
+			
 		var success = function(feed)
 		{
 			//alert("it worked!");
